@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Hero from "@/components/sections/Hero";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import { SplineScene } from "@/components/ui/splite";
 import { Card } from "@/components/ui/card"
@@ -38,41 +39,21 @@ export default function Home() {
   ]
 
   return (
-    <div className="h-screen bg-black p-8 flex-col items-center justify-center">
-
+    <div className="h-screen bg-background p-8 flex-col items-center justify-center">
       <div className="p-8">
-      <NavBar items={navItems} />
+        <NavBar className="p-8" items={navItems} />
       </div>
 
-      <Card className="w-full h-[900px] bg-black/[0.96] relative overflow-hidden">
-      <div className="flex h-full">
-        {/* Left content */}
-        <div className="flex-1 p-8 relative z-10 flex flex-col justify-center">
-          <h1 className="text-9xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-            Hi, I'm Khizar
-          </h1>
-          <p className="mt-4 text-neutral-300 max-w-lg">
-            Bring your UI to life with beautiful 3D scenes. Create immersive experiences 
-            that capture attention and enhance your design.
-          </p>
-        </div>
 
-        {/* Right content */}
-        <div className="flex-1 relative">
-          <SplineScene 
-            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-            className="w-full h-full"
-          />
-        </div>
+      <Hero />
+      <div className="flex justify-center items-center p-8">
+        <HyperText
+          className="text-4xl flex items-center justify-center font-bold text-foreground"
+          text="My Projects"
+        />
       </div>
-    </Card>
+  
 
-    <div className="bg-black-500 flex items-center justify-center p-8">
-      <HyperText
-        className="text-4xl font-bold text-black dark:text-white"
-        text="My Projects"
-      />
-    </div>
 
     <div className="flex justify-center content-center items-center grid grid-cols-3 gap-4">
       <GridPatternCard>
@@ -137,10 +118,10 @@ export default function Home() {
       </GridPatternCard>
       <GridPatternCard>
         <GridPatternCardBody>
-          <h3 className="text-lg font-bold mb-1 text-foreground">
+          <h3 className="text-lg flex items-center justify-center font-bold mb-1 text-foreground">
             Grid Pattern with Ellipsis
           </h3>
-          <p className="text-wrap text-sm text-foreground/60">
+          <p className=" flex items-center justify-center text-sm text-foreground/60">
             A sophisticated pattern combining grid layout with ellipsis dots. 
             Perfect for creating depth and visual interest while maintaining 
             readability and modern aesthetics.
@@ -149,7 +130,7 @@ export default function Home() {
       </GridPatternCard>
     </div>
 
-    <div className="p-8 bg-black block w-full">
+    <div className="p-8 block w-full">
       <StackedCircularFooter />
     </div>
 
