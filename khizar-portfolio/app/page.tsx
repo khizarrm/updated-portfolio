@@ -19,25 +19,6 @@ export default function Home() {
     { name: 'Resume', url: '#', icon: FileText }
   ]
 
-  const socials = [
-    {
-      name: "Instagram",
-      image: "https://link-hover-lndev.vercel.app/instagram.png",
-    },
-    {
-      name: "LinkedIn",
-      image: "https://link-hover-lndev.vercel.app/linkedin.png",
-    },
-    {
-      name: "Spotify",
-      image: "https://link-hover-lndev.vercel.app/spotify.png",
-    },
-    {
-      name: "TikTok",
-      image: "https://link-hover-lndev.vercel.app/tiktok.png",
-    },
-  ]
-
   return (
     <div className="h-screen bg-background p-8 flex-col items-center justify-center">
       <div className="p-8">
