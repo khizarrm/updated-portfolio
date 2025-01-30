@@ -10,6 +10,7 @@ import { User, Briefcase, FileText } from 'lucide-react'
 import { GridPatternCard, GridPatternCardBody } from "@/components/ui/card-with-grid-ellipsis-pattern"
 import { HyperText } from "@/components/ui/hyper-text"
 import { StackedCircularFooter } from "@/components/ui/stacked-circular-footer";
+import ProjectGrid from "@/components/sections/ProjectGrid";
 
 export default function Home() {
 
@@ -36,79 +37,8 @@ export default function Home() {
   
 
 
-    <div className="flex justify-center content-center items-center grid grid-cols-3 gap-4">
-      <GridPatternCard>
-        <GridPatternCardBody>
-          <h3 className="text-lg font-bold mb-1 text-foreground">
-            Grid Pattern with Ellipsis
-          </h3>
-          <p className="text-wrap text-sm text-foreground/60">
-            A sophisticated pattern combining grid layout with ellipsis dots. 
-            Perfect for creating depth and visual interest while maintaining 
-            readability and modern aesthetics.
-          </p>
-        </GridPatternCardBody>
-      </GridPatternCard>
-      <GridPatternCard>
-        <GridPatternCardBody>
-          <h3 className="text-lg font-bold mb-1 text-foreground">
-            Grid Pattern with Ellipsis
-          </h3>
-          <p className="text-wrap text-sm text-foreground/60">
-            A sophisticated pattern combining grid layout with ellipsis dots. 
-            Perfect for creating depth and visual interest while maintaining 
-            readability and modern aesthetics.
-          </p>
-        </GridPatternCardBody>
-      </GridPatternCard>
-      <GridPatternCard>
-        <GridPatternCardBody>
-          <h3 className="text-lg font-bold mb-1 text-foreground">
-            Grid Pattern with Ellipsis
-          </h3>
-          <p className="text-wrap text-sm text-foreground/60">
-            A sophisticated pattern combining grid layout with ellipsis dots. 
-            Perfect for creating depth and visual interest while maintaining 
-            readability and modern aesthetics.
-          </p>
-        </GridPatternCardBody>
-      </GridPatternCard>
-      <GridPatternCard>
-        <GridPatternCardBody>
-          <h3 className="text-lg font-bold mb-1 text-foreground">
-            Grid Pattern with Ellipsis
-          </h3>
-          <p className="text-wrap text-sm text-foreground/60">
-            A sophisticated pattern combining grid layout with ellipsis dots. 
-            Perfect for creating depth and visual interest while maintaining 
-            readability and modern aesthetics.
-          </p>
-        </GridPatternCardBody>
-      </GridPatternCard>
-      <GridPatternCard>
-        <GridPatternCardBody>
-          <h3 className="text-lg font-bold mb-1 text-foreground">
-            Grid Pattern with Ellipsis
-          </h3>
-          <p className="text-wrap text-sm text-foreground/60">
-            A sophisticated pattern combining grid layout with ellipsis dots. 
-            Perfect for creating depth and visual interest while maintaining 
-            readability and modern aesthetics.
-          </p>
-        </GridPatternCardBody>
-      </GridPatternCard>
-      <GridPatternCard>
-        <GridPatternCardBody>
-          <h3 className="text-lg flex items-center justify-center font-bold mb-1 text-foreground">
-            Grid Pattern with Ellipsis
-          </h3>
-          <p className=" flex items-center justify-center text-sm text-foreground/60">
-            A sophisticated pattern combining grid layout with ellipsis dots. 
-            Perfect for creating depth and visual interest while maintaining 
-            readability and modern aesthetics.
-          </p>
-        </GridPatternCardBody>
-      </GridPatternCard>
+    <div >
+      <ProjectGrid />
     </div>
 
     <div className="p-8 block w-full">
