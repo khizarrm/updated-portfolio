@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { Header1 } from "@/components/ui/header";
 import { GridBackground } from "@/components/ui/glowing-card";
@@ -16,9 +18,11 @@ export default function Home() {
           className="mt-28 py-48 flex justify-center items-center"
         />
       </div>
+      <div className="container mx-auto mt-8">
+        <GitHubGraph></GitHubGraph> 
+      </div>
       <ProjectsSection></ProjectsSection>
       <Footer></Footer>
-      <GitHubGraph></GitHubGraph>
     </div>
   );
 }
