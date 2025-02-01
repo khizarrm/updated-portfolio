@@ -9,7 +9,7 @@ import Footer from "@/components/ui/footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black">
       <Header1 />
       <div className="container mx-auto">
         <GridBackground 
