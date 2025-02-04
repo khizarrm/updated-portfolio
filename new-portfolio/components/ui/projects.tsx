@@ -33,7 +33,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <div className="w-full max-w-6xl mx-auto p-4 space-y-8">
+    <div className="w-full max-w-6xl mx-auto p-4 space-y-8 mt-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4 text-white">Featured Projects</h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
