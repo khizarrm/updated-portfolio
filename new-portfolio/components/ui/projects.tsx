@@ -3,31 +3,33 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, Globe } from 'lucide-react';
+import thirdspace  from "../../images/thirdspace.png";
+import cuhack from "../../images/cuhacking.png";
+import leethub from '../../images/leethub.png';
+import { url } from 'inspector';
 
 const projects = [
   {
     title: "thirdspace",
-    description: "Full-stack e-commerce platform built with Next.js, TypeScript, and PostgreSQL. Features include user authentication, shopping cart, and payment integration.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
-    github: "https://github.com/yourusername/project",
-    demo: "https://demo-link.com",
-    image: "/api/placeholder/600/400"
+    description: "An app to help students share experiences with one another. Currently at 700+ users and ranked 70th in the app store.",
+    tags: ["Expo Go", "RabbitMQ", "TypeScript", "PostgreSQL", "MySql"],
+    demo: "https://thirdspace.so/",
+    image: thirdspace.src
   },
   {
-    title: "Task Management App",
-    description: "Real-time task management application with team collaboration features. Built using React, Firebase, and Material-UI.",
-    tags: ["React", "Firebase", "Material-UI", "Redux"],
-    github: "https://github.com/yourusername/project2",
-    demo: "https://demo-link2.com",
-    image: "/api/placeholder/600/400"
+    title: "CUHacking",
+    description: "A hackathon project submission platform for Carleton University students.",
+    tags: ["React/Next.js", "Tailwind CSS", "TypeScript", "Shadcn UI", "Three.js", "pnpm"],
+    github: "https://github.com/khizarrm/2025",
+    demo: "https://cuhacking.ca/",
+    image: cuhack.src
   },
   {
-    title: "Task Management App",
-    description: "Real-time task management application with team collaboration features. Built using React, Firebase, and Material-UI.",
-    tags: ["React", "Firebase", "Material-UI", "Redux"],
-    github: "https://github.com/yourusername/project2",
-    demo: "https://demo-link2.com",
-    image: "/api/placeholder/600/400"
+    title: "LeetHub",
+    description: "A chrome extension which automatically uploads your correct LeetCode submissions to GitHub.",
+    tags: ["JavaScript", "React", "Github Rest API"],
+    github: "https://github.com/khizarrm/LeetHub",
+    image: leethub.src,
   },
 ];
 
@@ -43,6 +45,7 @@ const ProjectsSection = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((project, index) => (
+          console.log(project.image),
           <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow bg-background backdrop-blur-sm">
             <img
               src={project.image}
@@ -62,14 +65,18 @@ const ProjectsSection = () => {
                 ))}
               </div>
               <div className="flex gap-4">
-                <Button variant="ghost" size="sm" className="text-gray-300 hover:bg-gray-800 hover:text-white">
-                  <Github className="mr-2 h-4 w-4" />
-                  Code
-                </Button>
-                <Button variant="ghost" size="sm" className="text-gray-300 hover:bg-gray-800 hover:text-white">
-                  <Globe className="mr-2 h-4 w-4" />
-                  Demo
-                </Button>
+                {project.github && (
+                  <Button onClick = {() => window.open(project.github)}variant="ghost" size="sm" className="text-gray-300 hover:bg-gray-800 hover:text-white">
+                    <Github className="mr-2 h-4 w-4" />
+                    Code
+                  </Button>
+                )}
+                {project.demo && (  
+                  <Button onClick = {() => window.open(project.demo)}variant="ghost" size="sm" className="text-gray-300 hover:bg-gray-800 hover:text-white">
+                    <Globe className="mr-2 h-4 w-4" />
+                    Demo
+                  </Button>
+                )}
               </div>
             </CardContent>
           </Card>

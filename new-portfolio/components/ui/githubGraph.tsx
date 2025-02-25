@@ -37,7 +37,7 @@ export default function ContributionGraph() {
     );
 
   return (
-    <div className="rounded-xl border border-border/30 bg-card/80 backdrop-blur-md p-6 shadow-lg">
+    <div className="rounded-xl border border-border/30 bg-background backdrop-blur-md p-6 shadow-lg">
       <h2 className="text-xl font-semibold text-card-foreground mb-4">GitHub Contributions</h2>
       <div className="flex xl:flex-row flex-col gap-4">
         <div className="bg-[hsl(0,0%,12%)]/90 border border-[hsl(0,0%,15%)]/30 p-6 rounded-lg max-w-fit max-h-fit backdrop-blur-sm">
