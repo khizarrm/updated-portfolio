@@ -6,7 +6,6 @@ import { Github, Globe } from 'lucide-react';
 import thirdspace  from "../../images/thirdspace.png";
 import cuhack from "../../images/cuhacking.png";
 import leethub from '../../images/leethub.png';
-import { url } from 'inspector';
 
 const projects = [
   {
